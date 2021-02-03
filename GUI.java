@@ -4,6 +4,8 @@ public class GUI extends javax.swing.JFrame {
 
     public GUI() {
         initComponents();
+        setResizable(false);
+        setName("GeoFiguren");
     }
 
 
@@ -333,19 +335,29 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bBerechneKreisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreisActionPerformed
-        // TODO add your handling code here:
+        Kreis k = new Kreis(Integer.parseInt(tRadius.getText()));
+        tUmfangKreis.setText(String.valueOf(k.getUmfang()));
+        tFlaecheKreis.setText(String.valueOf(k.getFlaecheninhalt()));
     }//GEN-LAST:event_bBerechneKreisActionPerformed
 
     private void bBerechneKreis1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreis1ActionPerformed
-        // TODO add your handling code here:
+        Rechteck r = new Rechteck(Integer.parseInt(tRadius1.getText()), Integer.parseInt(tRadius2.getText()),
+                Integer.parseInt(tRadius1.getText()),Integer.parseInt(tRadius2.getText()));
+        tUmfangKreis1.setText(String.valueOf(r.getUmfang()));
+        tFlaecheKreis1.setText(String.valueOf(r.getFlaecheninhalt()));
     }//GEN-LAST:event_bBerechneKreis1ActionPerformed
 
     private void bBerechneKreis2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreis2ActionPerformed
-        // TODO add your handling code here:
+        Dreieck d = new Dreieck(Integer.parseInt(tRadius3.getText()), Integer.parseInt(tRadius4.getText()),
+                Integer.parseInt(tRadius5.getText()));
+        tUmfangKreis2.setText(String.valueOf(d.getUmfang()));
+        tFlaecheKreis2.setText("null");
     }//GEN-LAST:event_bBerechneKreis2ActionPerformed
 
     private void bBerechneKreis3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreis3ActionPerformed
-        // TODO add your handling code here:
+        Quadrat q = new Quadrat(Integer.parseInt(tRadius6.getText()));
+        tUmfangKreis3.setText(String.valueOf(q.getUmfang()));
+        tFlaecheKreis3.setText(String.valueOf(q.getFlaecheninhalt()));
     }//GEN-LAST:event_bBerechneKreis3ActionPerformed
 
     /**
