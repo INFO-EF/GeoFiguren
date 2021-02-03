@@ -313,29 +313,29 @@ public class GUI extends javax.swing.JFrame {
 
     private void bBerechneKreisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreisActionPerformed
         Kreis k = new Kreis(Integer.parseInt(tRadius.getText()));
-        tUmfangKreis.setText(String.valueOf(k.getUmfang()));
-        tFlaecheKreis.setText(String.valueOf(k.getFlaecheninhalt()));
+        tUmfangKreis.setText(String.valueOf(k.getUmfang())+jComboBox1.getSelectedItem());
+        tFlaecheKreis.setText(String.valueOf(k.getFlaecheninhalt())+jComboBox1.getSelectedItem());
     }//GEN-LAST:event_bBerechneKreisActionPerformed
 
     private void bBerechneKreis1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreis1ActionPerformed
         Rechteck r = new Rechteck(Integer.parseInt(tRadius1.getText()), Integer.parseInt(tRadius2.getText()),
                 Integer.parseInt(tRadius1.getText()),Integer.parseInt(tRadius2.getText()));
-        tUmfangKreis1.setText(String.valueOf(r.getUmfang()));
-        tFlaecheKreis1.setText(String.valueOf(r.getFlaecheninhalt()));
+        tUmfangKreis1.setText(String.valueOf(r.getUmfang())+jComboBox3.getSelectedItem());
+        tFlaecheKreis1.setText(String.valueOf(r.getFlaecheninhalt())+jComboBox3.getSelectedItem());
     }//GEN-LAST:event_bBerechneKreis1ActionPerformed
 
     private void bBerechneKreis2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreis2ActionPerformed
         Dreieck d = new Dreieck(Integer.parseInt(tRadius3.getText()), Integer.parseInt(tRadius4.getText()),
                 Integer.parseInt(tRadius5.getText()));
-        tUmfangKreis2.setText(String.valueOf(d.getUmfang()));
+        tUmfangKreis2.setText(String.valueOf(d.getUmfang())+jComboBox4.getSelectedItem());
         tFlaecheKreis2.setText("null");
 
     }//GEN-LAST:event_bBerechneKreis2ActionPerformed
 
     private void bBerechneKreis3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreis3ActionPerformed
         Quadrat q = new Quadrat(Integer.parseInt(tRadius6.getText()));
-        tUmfangKreis3.setText(String.valueOf(q.getUmfang()));
-        tFlaecheKreis3.setText(String.valueOf(q.getFlaecheninhalt()));
+        tUmfangKreis3.setText(String.valueOf(q.getUmfang())+jComboBox7.getSelectedItem());
+        tFlaecheKreis3.setText(String.valueOf(q.getFlaecheninhalt())+jComboBox7.getSelectedItem());
     }//GEN-LAST:event_bBerechneKreis3ActionPerformed
 
 
