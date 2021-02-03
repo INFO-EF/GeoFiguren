@@ -5,7 +5,7 @@ public class GUI extends javax.swing.JFrame {
     public GUI() {
         initComponents();
         setResizable(false);
-        setName("GeoFiguren");
+        this.setTitle("GeoFiguren");
     }
 
 
