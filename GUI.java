@@ -352,6 +352,7 @@ public class GUI extends javax.swing.JFrame {
                 Integer.parseInt(tRadius5.getText()));
         tUmfangKreis2.setText(String.valueOf(d.getUmfang()));
         tFlaecheKreis2.setText("null");
+
     }//GEN-LAST:event_bBerechneKreis2ActionPerformed
 
     private void bBerechneKreis3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreis3ActionPerformed
