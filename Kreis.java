@@ -1,8 +1,13 @@
 public class Kreis {
     private double umfang, flaecheninhalt;
     Kreis(double radius){
-        this.flaecheninhalt = rechneFlaecheninhalt(radius);
-        this.umfang = rechneUmfang(radius);
+        this.flaecheninhalt = round(rechneFlaecheninhalt(radius));
+        this.umfang = round(rechneUmfang(radius));
+    }
+
+    private double round(double value) {
+        double d = Math.pow(10, 2);
+        return Math.round(value * d) / d;
     }
 
     public double getUmfang() {
