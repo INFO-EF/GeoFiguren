@@ -1,29 +1,34 @@
-public class Kreis {
-    private double umfang, flaecheninhalt;
+public class Kreis extends GFigur{
+
     Kreis(double radius){
-        this.flaecheninhalt = round(rechneFlaecheninhalt(radius));
-        this.umfang = round(rechneUmfang(radius));
+        super();
+        this.setUmfang(super.round(rechneUmfang(radius)));
+        this.setFlaecheninhalt(super.round(rechneFlaecheninhalt(radius)));
     }
 
-    private double round(double value) {
-        double d = Math.pow(10, 2);
-        return Math.round(value * d) / d;
-    }
 
-    public double getUmfang() {
-        return umfang;
-    }
-
-    public double getFlaecheninhalt() {
-        return flaecheninhalt;
-    }
 
     public double rechneFlaecheninhalt(double radius) {
         return 2*radius*Math.PI;
     }
 
+    @Override
+    public double rechneFlaecheninhalt(double s1, double s2) {
+        return 0;
+    }
+
 
     public double rechneUmfang(double radius) {
         return Math.PI*Math.pow(radius, 2);
+    }
+
+    @Override
+    public double rechneUmfang(double s1, double s2, double s3, double s4) {
+        return 0;
+    }
+
+    @Override
+    public double rechneUmfang(double s1, double s2, double s3) {
+        return 0;
     }
 }
