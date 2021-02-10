@@ -327,8 +327,10 @@ public class GUI extends javax.swing.JFrame {
     private void bBerechneKreis2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bBerechneKreis2ActionPerformed
         Dreieck d = new Dreieck(Integer.parseInt(tRadius3.getText()), Integer.parseInt(tRadius4.getText()),
                 Integer.parseInt(tRadius5.getText()));
-        tUmfangKreis2.setText(String.valueOf(d.getUmfang())+jComboBox4.getSelectedItem());
-        tFlaecheKreis2.setText("null");
+
+        tUmfangKreis2.setText(String.valueOf(d.getUmfang()));
+        tFlaecheKreis2.setText(String.valueOf(d.getFlaecheninhalt()));
+
 
     }//GEN-LAST:event_bBerechneKreis2ActionPerformed
 
