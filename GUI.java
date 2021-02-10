@@ -328,7 +328,7 @@ public class GUI extends javax.swing.JFrame {
         Dreieck d = new Dreieck(Integer.parseInt(tRadius3.getText()), Integer.parseInt(tRadius4.getText()),
                 Integer.parseInt(tRadius5.getText()));
         tUmfangKreis2.setText(String.valueOf(d.getUmfang()));
-        tFlaecheKreis2.setText("null");
+        tFlaecheKreis2.setText(String.valueOf(d.getFlaecheninhalt()));
 
     }//GEN-LAST:event_bBerechneKreis2ActionPerformed
 
